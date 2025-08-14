@@ -62,4 +62,5 @@ bellekte bulunan değişkenlerden daha hızlı ulaşılır.
 |float              | ±3.4E-38 ... ±3.4E+38      |   32 bit     |
 |double             |±1.7E-308 ... ±1.7E+308     |    64 bit    |
 |long double        |±1.7E-308 ... ±1.7E+308     |   64 bit veya|
-|                    | ±3.4E-4932 ... ±1.1E+4932 |    80 bit  |                                            
+|                    | ±3.4E-4932 ... ±1.1E+4932 |    80 bit  |     
+Örnek: 8 bitlik bir signed char değişkenine 128 değerini atarsan, değişkenin değeri -128'e dönebilir. Bu durum, mantıksal hatalara yol açar ve programın yanlış çalışmasına neden olur.
