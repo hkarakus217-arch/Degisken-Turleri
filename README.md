@@ -53,13 +53,13 @@ bellekte bulunan değişkenlerden daha hızlı ulaşılır.
 |                   |0 ... +4294967294           |  32 bit      |
 |signed int         |-32768 ... +32767 veya      |  16 bit veya |       
 |                   |-2147483648 ... +2147483647 |  32 bit      |
-|short int          |-32768 ... +32767             16 bit       | 
-|unsigned short int |   0 ... +65535 16 bit             |
-|signed short int   | -32768 ... +32767 16 bit          |
-|long int           |-2147483648 ... +2147483647 32 bit |
-|signed long int    |-2147483648 ... +2147483647 32 bit |
-|unsigned long int  |0 ... +4294967294 32 bit           |
-|float              | ±3.4E-38 ... ±3.4E+38 32 bit      |
-|double             |±1.7E-308 ... ±1.7E+308 64 bit     |
-|long double        |±1.7E-308 ... ±1.7E+308 64 bit veya|
-|                    | ±3.4E-4932 ... ±1.1E+4932 80 bit  |                                            
+|short int          |-32768 ... +32767           |  16 bit      | 
+|unsigned short int |   0 ... +65535             |   16 bit     |
+|signed short int   | -32768 ... +32767          |   16 bit     |
+|long int           |-2147483648 ... +2147483647 |   32 bit     |
+|signed long int    |-2147483648 ... +2147483647 |   32 bit     | 
+|unsigned long int  |0 ... +4294967294           |   32 bit     |
+|float              | ±3.4E-38 ... ±3.4E+38      |   32 bit     |
+|double             |±1.7E-308 ... ±1.7E+308     |    64 bit    |
+|long double        |±1.7E-308 ... ±1.7E+308     |   64 bit veya|
+|                    | ±3.4E-4932 ... ±1.1E+4932 |    80 bit  |                                            
