@@ -42,6 +42,7 @@ tanımlanırsa bu değişken, RAM bellekte değil, mikroişlemcinin registerinde
 Bu nedenle register tipinde tanımlanmış değişkenlerin kullanıldığı programlar
 diğer programlara göre daha hızlı çalışır. Çünkü registerde bulunan değişkenlere,
 bellekte bulunan değişkenlerden daha hızlı ulaşılır.
+Örnek: 8 bitlik bir signed char değişkenine 128 değerini atarsan, değişkenin değeri -128'e dönebilir. Bu durum, mantıksal hatalara yol açar ve programın yanlış çalışmasına neden olur.
 |  Tip              |SINIRLARI                   |Bellekte alanı|
 |-------------------|----------------------------|--------------|
 |char               | -128   +127                |   8 bit      |            
@@ -63,4 +64,4 @@ bellekte bulunan değişkenlerden daha hızlı ulaşılır.
 |double             |±1.7E-308 ... ±1.7E+308     |    64 bit    |
 |long double        |±1.7E-308 ... ±1.7E+308     |   64 bit veya|
 |                    | ±3.4E-4932 ... ±1.1E+4932 |    80 bit  |     
-Örnek: 8 bitlik bir signed char değişkenine 128 değerini atarsan, değişkenin değeri -128'e dönebilir. Bu durum, mantıksal hatalara yol açar ve programın yanlış çalışmasına neden olur.
+
