@@ -2,20 +2,24 @@
 C programlama dilinde, programda kullanılan değişkenler (variables), programın
 başında kullanılmadan önce tanımlanmalıdır. C programlama dilinde 4 temel veri
 tipi vardır. 
+
 Bunlar: karakter (character) tipi, tamsayı (integer) tipi, kayan noktalı
 (floating point) sayı tipi ve büyük kayan noktalı (double floating point) sayı tipidir.
 Yukarıda sıralanan temel veri tipleri sırasıyla char, int, float ve double
 sözcükleriyle tanımlanırlar.
+
 int tipi değişkenler, tamsayı tipi ve belirli sınırlar arasında
 büyüklüğe sahip sayıları tutar.tam sayıları kapsadığı için negatif sayıları da kapsar. 
 unsigned int değişkenleri pozitif tamsayı tipi ve belirli sınırlar arasında
 büyüklüğe sahip sayıları tutar.
 char tipi değişkenler, ASCII tipi, örneğin ‘A’, ‘B’ ve ‘C’ gibi karakterleri
 tutmakta kullanılır.
+
 float ve double tipi değişkenler, kesirli ve/veya tamsayı tipinden daha geniş sınırlar arasındaki sayıları tutmakta kullanılırlar.
 float ile double tipi değişkenler arasındaki fark, tuttukları sayıların değişik
 büyüklükte olmasıdır. double tipi değişkenler, float tipi değişkenlerin tuttuğu
 sayıların yaklaşık 10 katı büyüklüğündeki sayıları tutabilir.double daha hassas çalışırlar float a göre
+
 Değişkenlerin Tanımlanması
 Programda kullanılan değişkenler, aşağıdaki genel formatla tanımlanır.
 tip değişken/ler;
@@ -23,6 +27,7 @@ Tip, C’de tanımlı olan değişken tiplerinden biri olmalıdır. Aynı tipte 
 int x, y, z;
 short int t;
 double j;
+
 Değişkenlerin, programların hangi bölümlerinde tanımlanacağı, ilerleyen konularda
 daha ayrıntılı olarak anlatılacaktır. Ancak burada da kısaca değineceğiz. Değişkenler, programın 3 değişik yerinde tanımlanabilir. İlk olarak, programın başında
 main() fonksiyondan önce tanımlanabilir. Burada tanımlanan değişkenler
@@ -30,11 +35,13 @@ GLOBAL değişken olarak adlandırılırlar ve programda yer alan, main()
 fonksiyonu ve diğer fonksiyonlarda da kullanılabilirler. main() fonksiyonu ve diğer
 fonksiyonlar içersinde tanımlanan değişkenler ise LOKAL değişkenler olarak
 adlandırılır ve sadece tanımlandığı fonksiyon içersinde kullanılabilir.
+
 2. static Tipi Değişkenler
 Herhangi bir değişken static tip değiştirici sözcüğü kullanılarak tanımlanırsa,
 içinde tanımlandığı fonksiyon ana program tarafından birden fazla çağrıldığında,
 her çağrılışında daha önce tuttuğu değeri korur.
 static int x;
+
 3. register Tipi Değişkenler
 Diğer bir önemli tip değiştirici register olarak adlandırılır ve bu sözcük sadece
 int ve char tipi değişkenlere uygulanır. Bir değişken register tipinde
@@ -42,7 +49,13 @@ tanımlanırsa bu değişken, RAM bellekte değil, mikroişlemcinin registerinde
 Bu nedenle register tipinde tanımlanmış değişkenlerin kullanıldığı programlar
 diğer programlara göre daha hızlı çalışır. Çünkü registerde bulunan değişkenlere,
 bellekte bulunan değişkenlerden daha hızlı ulaşılır.
-Örnek: 8 bitlik bir signed char değişkenine 128 değerini atarsan, değişkenin değeri -128'e dönebilir. Bu durum, mantıksal hatalara yol açar ve programın yanlış çalışmasına neden olur.
+
+
+Örnek: 8 bitlik bir signed char değişkenine 128 değerini atarsan, değişkenin değeri -128'e dönebilir. 
+Bu durum, mantıksal hatalara yol açar ve programın yanlış çalışmasına neden olur.
+
+
+
 |  Tip              |SINIRLARI                   |Bellekte alanı|
 |-------------------|----------------------------|--------------|
 |char               | -128   +127                |   8 bit      |            
